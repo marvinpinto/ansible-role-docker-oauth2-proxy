@@ -1,5 +1,7 @@
 ---
-- hosts: localhost
+- hosts: 'all'
   remote_user: root
+  become: true
   roles:
-    - docker-oauth2-proxy
+    - 'marvinpinto.docker'
+    - 'ansible-role-docker-oauth2-proxy'
