@@ -1,2 +1,13 @@
 ---
-# defaults file for docker-oauth2-proxy
+# Docker container name
+docker_oauth2_proxy_container_name: 'oauth2proxy'
+
+# oauth2-proxy host port
+docker_oauth2_proxy_published_port: '4180'
+
+# oauth2-proxy command line arguments
+docker_oauth2_proxy_command: >-
+  --upstream="http://127.0.0.1:8080/"
+  --cookie-secret="muchsekr3t"
+  --client-id="doge"
+  --client-secret="suchsekuR3"

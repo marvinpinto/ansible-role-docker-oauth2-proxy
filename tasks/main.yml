@@ -1,2 +1,12 @@
 ---
-# tasks file for docker-oauth2-proxy
+- name: 'Start the oauth2-proxy docker container'
+  docker:
+    image: 'skippy/oauth2_proxy'
+    name: '{{ docker_oauth2_proxy_container_name }}'
+    ports: '{{ docker_oauth2_proxy_published_port }}:4180'
+    command: '{{ docker_oauth2_proxy_command }}'
+    state: 'started'
+    restart_policy: 'always'
+    log_driver: 'syslog'
+    log_opt:
+      syslog-tag: "{{ docker_oauth2_proxy_container_name }}"
