@@ -9,7 +9,7 @@ galaxy_info:
       versions:
        - trusty
   galaxy_tags:
-    - docker
-    - ubuntu
-    - oauth2_proxy
+    - 'docker'
+    - 'ubuntu'
+    - 'oauth2_proxy'
 dependencies: []
