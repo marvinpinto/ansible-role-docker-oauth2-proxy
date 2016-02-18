@@ -11,5 +11,5 @@ galaxy_info:
   galaxy_tags:
     - docker
     - ubuntu
-    - oauth2-proxy
+    - oauth2_proxy
 dependencies: []
