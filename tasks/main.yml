@@ -3,6 +3,7 @@
   docker:
     image: 'skippy/oauth2_proxy'
     name: '{{ docker_oauth2_proxy_container_name }}'
+    volumes: '{{ docker_oauth2_volumes }}'
     ports: '{{ docker_oauth2_proxy_published_port }}:4180'
     expose: '4180'
     command: '{{ docker_oauth2_proxy_command }}'

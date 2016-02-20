@@ -5,6 +5,9 @@ docker_oauth2_proxy_container_name: 'oauth2proxy'
 # oauth2-proxy host port
 docker_oauth2_proxy_published_port: '4180'
 
+# Any files/directories that need mounting inside the docker container
+docker_oauth2_volumes: []
+
 # oauth2-proxy command line arguments
 docker_oauth2_proxy_command: >-
   --upstream="http://127.0.0.1:8080/"
